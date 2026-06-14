@@ -12,3 +12,6 @@ pics/
 
 # 日志
 *.log
+
+# 本地检查产物
+.tmp-review/
