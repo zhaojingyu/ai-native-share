@@ -1542,13 +1542,16 @@ nav a.is-active::after {
   .principle-list,
   .story-grid,
   .case-grid,
-  .evidence-strip,
   .anti-grid,
   .beyond-grid,
   .architecture-layout,
   .closing,
   .eval-layout {
     grid-template-columns: 1fr;
+  }
+
+  .evidence-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .rollout-grid {
@@ -1656,7 +1659,7 @@ nav a.is-active::after {
 .aguide { fill: none; stroke: none; }
 .hub-conn { stroke: var(--line); stroke-width: 2; }
 
-.pkt { opacity: 0; }
+.pkt { opacity: 1; }
 .pkt-cyan  { fill: var(--cyan);  filter: drop-shadow(0 0 3px rgba(0, 167, 181, 0.7)); }
 .pkt-amber { fill: var(--amber); filter: drop-shadow(0 0 3px rgba(216, 137, 25, 0.7)); }
 .pkt-green { fill: var(--green); filter: drop-shadow(0 0 3px rgba(79, 143, 101, 0.7)); }
