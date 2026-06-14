@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+
+# Vercel
+.vercel/
+
+# 原始案例截图（不公开）
+pics/
+
+# 日志
+*.log
