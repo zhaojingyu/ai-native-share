@@ -93,11 +93,11 @@ nav a:hover { color: #fff; }
 /* ============== Hero ============== */
 .hero {
   position: relative;
-  min-height: 92vh;
+  min-height: 84vh;
   display: grid;
   align-items: center;
   overflow: hidden;
-  padding: 112px clamp(20px, 6vw, 76px) 84px;
+  padding: 104px clamp(20px, 6vw, 76px) 72px;
   color: #fff;
 }
 
@@ -113,8 +113,8 @@ nav a:hover { color: #fff; }
 
 .hero-shade {
   background:
-    linear-gradient(90deg, rgba(16, 24, 28, 0.92) 0%, rgba(16, 24, 28, 0.66) 42%, rgba(16, 24, 28, 0.2) 100%),
-    linear-gradient(0deg, rgba(16, 24, 28, 0.84) 0%, rgba(16, 24, 28, 0) 34%);
+    linear-gradient(90deg, rgba(16, 24, 28, 0.68) 0%, rgba(16, 24, 28, 0.42) 44%, rgba(16, 24, 28, 0.04) 100%),
+    linear-gradient(0deg, rgba(16, 24, 28, 0.52) 0%, rgba(16, 24, 28, 0) 34%);
 }
 
 .hero-content {
@@ -137,7 +137,7 @@ h1, h2, h3, p { margin-top: 0; }
 
 h1 {
   margin-bottom: 22px;
-  font-size: clamp(42px, 7vw, 84px);
+  font-size: clamp(42px, 6.2vw, 78px);
   line-height: 1.04;
   letter-spacing: 0;
   max-width: 840px;
@@ -620,6 +620,44 @@ p, li, dd { color: var(--muted); }
   margin-top: 8px;
 }
 
+.evidence-strip {
+  display: grid;
+  grid-template-columns: 1.3fr repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.evidence-card {
+  margin: 0;
+  min-width: 0;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.evidence-card img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: top center;
+  background: var(--paper);
+}
+
+.evidence-card-wide img {
+  height: 220px;
+  object-position: center;
+}
+
+.evidence-card figcaption {
+  padding: 12px 14px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
 .case-card {
   display: flex;
   flex-direction: column;
@@ -1068,16 +1106,24 @@ p, li, dd { color: var(--muted); }
 }
 
 .radar-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0 6px;
+  white-space: nowrap;
+}
+
+.radar-legend::before {
+  content: "";
   display: inline-block;
   width: 10px;
   height: 10px;
   border-radius: 2px;
-  margin: 0 4px 0 8px;
-  vertical-align: middle;
+  flex: 0 0 auto;
 }
 
-.radar-legend-before { background: var(--bad); }
-.radar-legend-after { background: var(--cyan-dark); }
+.radar-legend-before::before { background: var(--bad); }
+.radar-legend-after::before { background: var(--cyan-dark); }
 
 /* ============== Rollout ============== */
 .rollout {
@@ -1106,6 +1152,34 @@ p, li, dd { color: var(--muted); }
   gap: 34px;
   align-items: start;
   background: var(--surface);
+  border-top: 1px solid var(--line);
+}
+
+.summary-visual {
+  padding: 0 clamp(20px, 6vw, 76px) 88px;
+  background: var(--surface);
+}
+
+.summary-visual figure {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.summary-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.summary-visual figcaption {
+  padding: 18px 22px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
   border-top: 1px solid var(--line);
 }
 
@@ -1335,6 +1409,7 @@ p, li, dd { color: var(--muted); }
   .principle-list,
   .story-grid,
   .case-grid,
+  .evidence-strip,
   .anti-grid,
   .beyond-grid,
   .architecture-layout,
@@ -1372,12 +1447,20 @@ p, li, dd { color: var(--muted); }
     padding-bottom: 2px;
   }
 
-  .hero { min-height: 96vh; padding-top: 128px; }
+  .hero {
+    min-height: 82svh;
+    padding-top: 118px;
+    padding-bottom: 54px;
+  }
+
+  .hero-image {
+    object-position: 43% center;
+  }
 
   .hero-shade {
     background:
-      linear-gradient(90deg, rgba(16, 24, 28, 0.92), rgba(16, 24, 28, 0.66)),
-      linear-gradient(0deg, rgba(16, 24, 28, 0.84), rgba(16, 24, 28, 0));
+      linear-gradient(90deg, rgba(16, 24, 28, 0.72), rgba(16, 24, 28, 0.52)),
+      linear-gradient(0deg, rgba(16, 24, 28, 0.46), rgba(16, 24, 28, 0));
   }
 
   .hero-copy { font-size: 17px; }
@@ -1404,5 +1487,23 @@ p, li, dd { color: var(--muted); }
   .quote-card,
   .northstar-card {
     padding: 22px 22px;
+  }
+
+  .flow-figure {
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .flow-svg {
+    min-width: 720px;
+  }
+
+  .evidence-card img,
+  .evidence-card-wide img {
+    height: 230px;
+  }
+
+  .summary-visual {
+    padding-bottom: 64px;
   }
 }
