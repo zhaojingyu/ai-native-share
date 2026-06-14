@@ -148,7 +148,7 @@ claude plugin add https://github.com/obra/superpowers
 
 | 钉钉机器人 | ↔ | 项目 git 地址 | ↔ | 群里相关人 |
 |---|---|---|---|---|
-| bot-ai-proxy | ↔ | github.com/xxx/ai-proxy | ↔ | @jyzhao @sy.zhang @july.zhou |
+| bot-ai-proxy | ↔ | github.com/xxx/ai-proxy | ↔ | @jyzhao @sy.hang @july.zhou |
 
 把这张映射表写在 `README.md` 或钉钉文档里，新人入项目时第一眼就能看到。
 

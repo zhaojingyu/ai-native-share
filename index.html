@@ -31,13 +31,14 @@
     <main id="top">
       <!-- ============== HERO ============== -->
       <section class="hero">
-        <img src="./assets/hero-ai-native-v2.webp" alt="" class="hero-image" />
+        <img src="./assets/hero-ai-native-v3.png" alt="" class="hero-image" />
         <div class="hero-shade"></div>
-        <div class="hero-content">
+        <div class="hero-content" data-stagger>
           <h1>一次 AI Native<br />组织的探索。</h1>
           <p class="hero-copy">
-            目前行业还没有统一的 AI Native 组织协作范式。比较清晰的方向是：
-            AI 先提升单点效率，再倒逼组织重新设计信息流、岗位接口、事实源和评估方式。
+            大家都在用 AI，但团队真的变快了吗？个人提速了，
+            组织的协作方式却常常没跟上。行业还没有统一答案——
+            这里是我们一步步摸索出来的做法，分享给你，也欢迎一起拍砖。
           </p>
           <div class="hero-actions">
             <a class="primary-action" href="#workflow">看协作闭环</a>
@@ -48,16 +49,16 @@
 
       <!-- ============== 1. 核心判断 ============== -->
       <section id="thesis" class="section thesis">
-        <div class="section-kicker">核心判断</div>
-        <h2>组织效率 ≠ 所有人个人效率相加。</h2>
+        <div class="section-kicker" data-reveal>核心判断</div>
+        <h2 data-reveal>组织效率 ≠ 所有人个人效率相加。</h2>
 
-        <div class="quote-card">
+        <div class="quote-card" data-reveal>
           <p>组织效率 = 节点处理能力 × 节点间流通速度</p>
           <span>—— 个人提速是局部最优，组织提速是系统最优。</span>
         </div>
 
         <!-- SVG: 单点提效 vs 组织流速 -->
-        <figure class="flow-figure">
+        <figure class="flow-figure" data-reveal>
           <svg viewBox="0 0 940 320" class="flow-svg" role="img"
                aria-label="单点提效对比组织流速">
             <!-- 左侧：单点提效 -->
@@ -141,7 +142,7 @@
           </figcaption>
         </figure>
 
-        <div class="thesis-grid">
+        <div class="thesis-grid" data-stagger>
           <article>
             <span class="metric">1</span>
             <h3>人和人的同步沟通带宽有限</h3>
@@ -171,11 +172,11 @@
 
       <!-- ============== 2. 核心类比 ============== -->
       <section id="analogy" class="section analogy">
-        <div class="section-kicker">核心类比 · 贯穿全场</div>
-        <h2>从马车到汽车，不是把马换成发动机就结束了。</h2>
+        <div class="section-kicker" data-reveal>核心类比 · 贯穿全场</div>
+        <h2 data-reveal>从马车到汽车，不是把马换成发动机就结束了。</h2>
 
-        <figure class="flow-figure">
-          <svg viewBox="0 0 940 460" class="flow-svg" role="img"
+        <figure class="flow-figure" data-reveal>
+          <svg viewBox="0 0 940 400" class="flow-svg" role="img"
                aria-label="马车到汽车到 AI Native 组织的映射">
             <defs>
               <marker id="map-arrow-head" markerWidth="8" markerHeight="8"
@@ -197,9 +198,9 @@
                 <rect x="355" y="0" width="230" height="48" rx="6" class="map-cell"/>
                 <rect x="670" y="0" width="230" height="48" rx="6"
                       class="map-cell map-cell-strong"/>
-                <text x="155" y="30" text-anchor="middle" class="map-text">一匹马</text>
-                <text x="470" y="30" text-anchor="middle" class="map-text">一台发动机</text>
-                <text x="785" y="30" text-anchor="middle" class="map-text-strong">一个 agent</text>
+                <text x="155" y="30" text-anchor="middle" class="map-text">人骑马</text>
+                <text x="470" y="30" text-anchor="middle" class="map-text">人开车</text>
+                <text x="785" y="30" text-anchor="middle" class="map-text-strong">人 + agent</text>
                 <line x1="270" y1="24" x2="355" y2="24" class="map-arrow"
                       marker-end="url(#map-arrow-head)"/>
                 <line x1="585" y1="24" x2="670" y2="24" class="map-arrow"
@@ -255,21 +256,6 @@
                 <rect x="355" y="0" width="230" height="48" rx="6" class="map-cell"/>
                 <rect x="670" y="0" width="230" height="48" rx="6"
                       class="map-cell map-cell-strong"/>
-                <text x="155" y="30" text-anchor="middle" class="map-text">村落布局</text>
-                <text x="470" y="30" text-anchor="middle" class="map-text">城市规划</text>
-                <text x="785" y="30" text-anchor="middle" class="map-text-strong">
-                  岗位接口重设计
-                </text>
-                <line x1="270" y1="24" x2="355" y2="24" class="map-arrow"
-                      marker-end="url(#map-arrow-head)"/>
-                <line x1="585" y1="24" x2="670" y2="24" class="map-arrow"
-                      marker-end="url(#map-arrow-head)"/>
-              </g>
-              <g transform="translate(0,370)">
-                <rect x="40"  y="0" width="230" height="48" rx="6" class="map-cell"/>
-                <rect x="355" y="0" width="230" height="48" rx="6" class="map-cell"/>
-                <rect x="670" y="0" width="230" height="48" rx="6"
-                      class="map-cell map-cell-strong"/>
                 <text x="155" y="30" text-anchor="middle" class="map-text">自负其责</text>
                 <text x="470" y="30" text-anchor="middle" class="map-text">驾照 + 保险</text>
                 <text x="785" y="30" text-anchor="middle" class="map-text-strong">
@@ -291,88 +277,50 @@
 
       <!-- ============== 3. 设计原则 + 信息通路三件套 ============== -->
       <section id="principles" class="section principles">
-        <div class="section-kicker">设计原则</div>
-        <h2>把组织协作设计成一条可追溯的信息高速公路。</h2>
+        <div class="section-kicker" data-reveal>设计原则</div>
+        <h2 data-reveal>把组织协作设计成一条可追溯的信息高速公路。</h2>
 
-        <!-- SVG: 信息通路三件套 -->
-        <figure class="flow-figure">
-          <svg viewBox="0 0 940 360" class="flow-svg" role="img"
-               aria-label="git 钉钉 doc MCP 钉钉群机器人三件套">
-            <defs>
-              <marker id="hub-arrow" markerWidth="8" markerHeight="8"
-                      refX="7" refY="3" orient="auto">
-                <polygon points="0 0, 8 3, 0 6" fill="#087783"/>
-              </marker>
-            </defs>
+        <!-- SVG: 信息通路三件套（JS 流动动画） -->
+        <figure class="flow-figure" data-reveal>
+          <svg viewBox="0 0 920 215" class="flow-anim hub-anim" role="img"
+               aria-label="信息通路三件套：git 仓库、钉钉 doc MCP、钉钉群机器人围绕项目现场，数据在其间持续流动">
+            <!-- 隐形导引路径（JS 让数据包沿其流动） -->
+            <path id="g-doc"     class="aguide" d="M 460 86  L 460 120"/>
+            <path id="g-git-in"  class="aguide" d="M 245 153 L 360 153"/>
+            <path id="g-git-out" class="aguide" d="M 360 165 L 245 165"/>
+            <path id="g-bot"     class="aguide" d="M 560 159 L 675 159"/>
+
+            <!-- 可见连接线 -->
+            <line class="hub-conn" x1="460" y1="86"  x2="460" y2="120"/>
+            <line class="hub-conn" x1="245" y1="159" x2="360" y2="159"/>
+            <line class="hub-conn" x1="560" y1="159" x2="675" y2="159"/>
 
             <!-- 中心：项目现场 -->
-            <g transform="translate(370,140)">
-              <rect x="0" y="0" width="200" height="100" rx="12"
-                    class="hub-center"/>
-              <text x="100" y="44" text-anchor="middle" class="hub-title">
-                项目现场
-              </text>
-              <text x="100" y="70" text-anchor="middle" class="hub-sub">
-                人 + agent · spec / plan / TODO
-              </text>
-              <text x="100" y="88" text-anchor="middle" class="hub-sub">
-                / delivery
-              </text>
-            </g>
+            <rect x="360" y="120" width="200" height="78" rx="14" class="hub-center"/>
+            <text x="460" y="152" text-anchor="middle" class="hub-title">项目现场</text>
+            <text x="460" y="176" text-anchor="middle" class="hub-sub">人 + agent</text>
 
             <!-- 上：钉钉 doc MCP -->
-            <g transform="translate(370,10)">
-              <rect x="0" y="0" width="200" height="80" rx="10" class="hub-doc"/>
-              <text x="100" y="34" text-anchor="middle" class="hub-name">
-                钉钉 doc · MCP
-              </text>
-              <text x="100" y="58" text-anchor="middle" class="hub-role">
-                私有配置 + 文档协议
-              </text>
-            </g>
+            <rect x="360" y="14" width="200" height="72" rx="10" class="hub-doc"/>
+            <text x="460" y="44" text-anchor="middle" class="hub-name">钉钉 doc · MCP</text>
+            <text x="460" y="66" text-anchor="middle" class="hub-role">私有配置 + 文档协议</text>
 
             <!-- 左：git -->
-            <g transform="translate(40,150)">
-              <rect x="0" y="0" width="220" height="80" rx="10" class="hub-git"/>
-              <text x="110" y="34" text-anchor="middle" class="hub-name">
-                git 仓库
-              </text>
-              <text x="110" y="58" text-anchor="middle" class="hub-role">
-                版本化事实源 · 可回溯
-              </text>
-            </g>
+            <rect x="40" y="120" width="205" height="78" rx="10" class="hub-git"/>
+            <text x="142" y="152" text-anchor="middle" class="hub-name">git 仓库</text>
+            <text x="142" y="174" text-anchor="middle" class="hub-role">版本化事实源</text>
 
             <!-- 右：钉钉群机器人 -->
-            <g transform="translate(680,150)">
-              <rect x="0" y="0" width="220" height="80" rx="10" class="hub-bot"/>
-              <text x="110" y="34" text-anchor="middle" class="hub-name">
-                钉钉群 · 机器人
-              </text>
-              <text x="110" y="58" text-anchor="middle" class="hub-role">
-                实时广播 + 流转下一棒
-              </text>
-            </g>
+            <rect x="675" y="120" width="205" height="78" rx="10" class="hub-bot"/>
+            <text x="777" y="152" text-anchor="middle" class="hub-name">钉钉群机器人</text>
+            <text x="777" y="174" text-anchor="middle" class="hub-role">实时广播 · 流转下一棒</text>
 
-            <!-- 双向箭头 -->
-            <line x1="470" y1="90"  x2="470" y2="140"
-                  class="hub-link" marker-end="url(#hub-arrow)"/>
-            <line x1="470" y1="190" x2="470" y2="140"
-                  class="hub-link" marker-end="url(#hub-arrow)"/>
-            <line x1="260" y1="190" x2="370" y2="190"
-                  class="hub-link" marker-end="url(#hub-arrow)"/>
-            <line x1="570" y1="190" x2="680" y2="190"
-                  class="hub-link" marker-end="url(#hub-arrow)"/>
-
-            <!-- 底部说明 -->
-            <text x="470" y="280" text-anchor="middle" class="fig-detail">
-              三件套 = 信息通路 · 缺一个都会卡
-            </text>
-            <text x="470" y="304" text-anchor="middle" class="fig-detail">
-              没 git → 不可回溯　　没 doc MCP → 私有信息无处放
-            </text>
-            <text x="470" y="328" text-anchor="middle" class="fig-detail">
-              没群机器人 → 完成事项无人知
-            </text>
+            <!-- 流动数据包 -->
+            <circle class="pkt pkt-amber" r="5.5" data-path="g-doc"     data-dur="2200" data-delay="0"/>
+            <circle class="pkt pkt-cyan"  r="5.5" data-path="g-git-in"  data-dur="2400" data-delay="0"/>
+            <circle class="pkt pkt-cyan"  r="5.5" data-path="g-git-out" data-dur="2400" data-delay="1200"/>
+            <circle class="pkt pkt-green" r="5.5" data-path="g-bot"     data-dur="1500" data-delay="0"/>
+            <circle class="pkt pkt-green" r="5.5" data-path="g-bot"     data-dur="1500" data-delay="750"/>
           </svg>
           <figcaption>
             <strong>git · 钉钉 doc MCP · 钉钉群机器人</strong>
@@ -381,7 +329,7 @@
           </figcaption>
         </figure>
 
-        <div class="principle-list">
+        <div class="principle-list" data-stagger>
           <article>
             <h3>事实源前置</h3>
             <p>
@@ -428,7 +376,7 @@
           </article>
         </div>
 
-        <div class="quote-card">
+        <div class="quote-card" data-reveal>
           <p>人保留判断权和责任，agent 承担吞吐量。</p>
           <span>—— 这一句是整套原则的总纲。</span>
         </div>
@@ -436,12 +384,12 @@
 
       <!-- ============== 4. 协作闭环 ============== -->
       <section id="workflow" class="section workflow">
-        <div class="section-kicker">协作闭环</div>
-        <h2>从「聊天驱动」改成「文档驱动 + agent 接力」。</h2>
+        <div class="section-kicker" data-reveal>协作闭环</div>
+        <h2 data-reveal>从「聊天驱动」改成「文档驱动 + agent 接力」。</h2>
 
-        <figure class="flow-figure">
-          <svg viewBox="0 0 940 200" class="flow-svg" role="img"
-               aria-label="协作闭环五步流程">
+        <figure class="flow-figure" data-reveal>
+          <svg viewBox="0 0 940 200" class="flow-svg workflow-anim" role="img"
+               aria-label="协作闭环五步流程：接力棒沿五步循环流动，每步依次点亮">
             <defs>
               <marker id="arrowhead" markerWidth="10" markerHeight="10"
                       refX="8" refY="3" orient="auto">
@@ -450,7 +398,7 @@
             </defs>
 
             <g class="step-nodes">
-              <g transform="translate(20,40)">
+              <g class="stepg" data-seq="wf" data-seq-i="0" transform="translate(20,40)">
                 <rect x="0" y="0" width="160" height="100" rx="10"
                       class="step-box step-box-1"/>
                 <text x="80" y="34" text-anchor="middle" class="step-num">01</text>
@@ -459,7 +407,7 @@
                   agent 写 spec
                 </text>
               </g>
-              <g transform="translate(205,40)">
+              <g class="stepg" data-seq="wf" data-seq-i="1" transform="translate(205,40)">
                 <rect x="0" y="0" width="160" height="100" rx="10"
                       class="step-box step-box-2"/>
                 <text x="80" y="34" text-anchor="middle" class="step-num">02</text>
@@ -468,7 +416,7 @@
                   正式交接物
                 </text>
               </g>
-              <g transform="translate(390,40)">
+              <g class="stepg" data-seq="wf" data-seq-i="2" transform="translate(390,40)">
                 <rect x="0" y="0" width="160" height="100" rx="10"
                       class="step-box step-box-3"/>
                 <text x="80" y="34" text-anchor="middle" class="step-num">03</text>
@@ -477,7 +425,7 @@
                   生成 plan + 澄清
                 </text>
               </g>
-              <g transform="translate(575,40)">
+              <g class="stepg" data-seq="wf" data-seq-i="3" transform="translate(575,40)">
                 <rect x="0" y="0" width="160" height="100" rx="10"
                       class="step-box step-box-4"/>
                 <text x="80" y="34" text-anchor="middle" class="step-num">04</text>
@@ -486,7 +434,7 @@
                   测试 + 群广播
                 </text>
               </g>
-              <g transform="translate(760,40)">
+              <g class="stepg" data-seq="wf" data-seq-i="4" transform="translate(760,40)">
                 <rect x="0" y="0" width="160" height="100" rx="10"
                       class="step-box step-box-5"/>
                 <text x="80" y="34" text-anchor="middle" class="step-num">05</text>
@@ -509,13 +457,19 @@
             <text x="470" y="190" text-anchor="middle" class="loop-back-text">
               每一步都有 commit · 测试 · delivery 留痕
             </text>
+
+            <!-- 接力棒环形轨道（隐形）：从卡片上方掠过 5 步，再经底部回环到第 1 步 -->
+            <path id="g-relay" class="aguide"
+                  d="M 100 26 H 840 C 905 26 905 175 470 175 C 35 175 35 26 100 26"/>
+            <circle class="pkt baton" r="7" data-path="g-relay"
+                    data-dur="7200" data-delay="0" data-relay="workflow"/>
           </svg>
           <figcaption>
             传统模式交接靠「人在线 + 记忆」；AI Native 模式交接靠「文档 + git」。
           </figcaption>
         </figure>
 
-        <ol class="timeline">
+        <ol class="timeline" data-stagger>
           <li>
             <span>01</span>
             <div>
@@ -556,10 +510,10 @@
 
       <!-- ============== 5. 实际案例 ============== -->
       <section id="cases" class="section cases">
-        <div class="section-kicker">实际案例 · 真实跑通的三个画面</div>
-        <h2>不是抽象方法论，是真实在 gamehaus-ai-proxy 项目里跑通的画面。</h2>
+        <div class="section-kicker" data-reveal>实际案例 · 真实跑通的三个画面</div>
+        <h2 data-reveal>不是抽象方法论，是真实在 gamehaus-ai-proxy 项目里跑通的画面。</h2>
 
-        <div class="case-grid">
+        <div class="case-grid" data-stagger>
           <!-- 案例 1：钉钉群机器人推送（突出 at + TODO 流转） -->
           <article class="case-card">
             <div class="case-head">
@@ -582,7 +536,7 @@
               </div>
               <div class="mock-dt-body">
                 <div class="mock-mention">
-                  <span class="mock-at">@sy.zhang</span>
+                  <span class="mock-at">@sy.hang</span>
                   <span class="mock-arrow">→</span>
                   <span>产品验收 portal 登录流程</span>
                 </div>
@@ -592,7 +546,7 @@
                   <span>技术调研 new-api 方案</span>
                 </div>
                 <div class="mock-mention mock-blocked">
-                  <span class="mock-at">@sy.zhang</span>
+                  <span class="mock-at">@sy.hang</span>
                   <span class="mock-arrow">⚠</span>
                   <span>阻塞：portal 用户登录失败</span>
                 </div>
@@ -617,7 +571,7 @@
 
             <div class="case-mock case-mock-git">
               <div class="mock-git-line">
-                <span class="mock-git-hash">a31fc8</span>
+                <span class="mock-git-hash">b79d5e</span>
                 <span class="mock-git-author">master · ai-proxy</span>
               </div>
               <div class="mock-git-msg">
@@ -626,7 +580,7 @@
               <div class="mock-git-timeline">
                 <div class="git-tl-row">
                   <span class="git-tl-time">06-12 14:30</span>
-                  <span class="git-tl-who">@sy.zhang</span>
+                  <span class="git-tl-who">@sy.hang</span>
                   <span class="git-tl-act">写 spec · admin quota 边界</span>
                 </div>
                 <div class="git-tl-row">
@@ -717,7 +671,7 @@
           </article>
         </div>
 
-        <div class="evidence-strip" aria-label="真实项目截图证据">
+        <div class="evidence-strip" data-stagger aria-label="真实项目截图证据">
           <figure class="evidence-card evidence-card-wide">
             <img src="./assets/case-claude-workbench.webp" alt="Claude Code 工作台截图" loading="lazy" />
             <figcaption>Agent 工作台：读取上下文、列出 TODO、验收标准和下一棒。</figcaption>
@@ -739,10 +693,10 @@
 
       <!-- ============== 6. 评估 ============== -->
       <section id="evaluation" class="section evaluation">
-        <div class="section-kicker">管理者视角</div>
-        <h2>评估改造效果，不能看「用了多少 AI」，要看组织产出有没有变好。</h2>
+        <div class="section-kicker" data-reveal>管理者视角</div>
+        <h2 data-reveal>评估改造效果，不能看「用了多少 AI」，要看组织产出有没有变好。</h2>
 
-        <div class="northstar-card">
+        <div class="northstar-card" data-reveal>
           <div class="northstar-label">北极星指标</div>
           <p class="northstar-text">
             在质量和风险不变差的前提下，<br />
@@ -750,7 +704,7 @@
           </p>
         </div>
 
-        <div class="eval-layout">
+        <div class="eval-layout" data-stagger>
           <div class="evaluation-table" role="table"
                aria-label="AI Native 组织评估框架">
             <div class="eval-row eval-head" role="row">
@@ -827,17 +781,17 @@
         </div>
 
         <p class="evaluation-note">
-          不建议把 AI 调用次数、token 消耗量、生成代码行数当成核心指标。
-          它们只能说明「用了 AI」，不能说明组织真的变强。
+          一句话提醒：AI 调用次数、token 消耗量、生成代码行数，都只是「用了 AI」的证据，
+          不是「组织变强」的证据。别把过程指标当成结果指标。
         </p>
       </section>
 
       <!-- ============== 7. 落地路径 ============== -->
       <section id="rollout" class="section rollout">
-        <div class="section-kicker">落地路径</div>
-        <h2>四步把一个新项目初始化成 AI Native 模式。</h2>
+        <div class="section-kicker" data-reveal>落地路径</div>
+        <h2 data-reveal>四步把一个新项目初始化成 AI Native 模式。</h2>
 
-        <div class="rollout-grid">
+        <div class="rollout-grid" data-stagger>
           <article>
             <span>阶段 A</span>
             <h3>建群 + git 项目 + 初始化</h3>
@@ -890,10 +844,10 @@
 
       <!-- ============== 8. 超越技术团队 ============== -->
       <section id="beyond" class="section beyond">
-        <div class="section-kicker">超越技术团队</div>
-        <h2>这不只是研发的事 —— 业务、产品、运营同样适用。</h2>
+        <div class="section-kicker" data-reveal>超越技术团队</div>
+        <h2 data-reveal>这不只是研发的事 —— 业务、产品、运营同样适用。</h2>
 
-        <div class="beyond-grid">
+        <div class="beyond-grid" data-stagger>
           <article>
             <h3>术语是技术化的，结构是普适的</h3>
             <p>
@@ -924,8 +878,8 @@
       <!-- ============== 9. 结尾 ============== -->
       <section class="section closing">
         <div>
-          <div class="section-kicker">一句话总结</div>
-          <h2>token 消耗有边际递减，<br />真正的杠杆在 agent 之间的接力。</h2>
+          <div class="section-kicker" data-reveal>一句话总结</div>
+          <h2 data-reveal>token 消耗有边际递减，<br />真正的杠杆在 agent 之间的接力。</h2>
           <p class="closing-detail">
             单个人 token 消耗的上限是边际效应递减的。
             普及一定的人均 token 消耗量是基础，但更重要的是
@@ -934,7 +888,7 @@
           </p>
         </div>
 
-        <div class="nextsteps">
+        <div class="nextsteps" data-reveal>
           <div class="nextsteps-label">观众下一步可以做的事</div>
           <ol>
             <li>
@@ -956,7 +910,91 @@
       <!-- ============== 10. 总结图 ============== -->
       <section class="summary-visual" aria-label="AI Native 组织协作总结图">
         <figure>
-          <img src="./assets/ai-native-summary.webp" alt="AI Native 组织协作整体总结图" loading="lazy" />
+          <svg viewBox="0 0 960 490" class="summary-svg" data-reveal role="img"
+               aria-label="AI Native 组织协作一图总结：人加 agent 协作单元，经文档协议交接，git 成为版本化事实源中枢，钉钉 doc MCP 存私有配置，群机器人实时广播并流转下一棒，最后用北极星指标和五维评估闭环。">
+            <defs>
+              <marker id="sum-ah" markerWidth="9" markerHeight="9"
+                      refX="7" refY="3" orient="auto">
+                <polygon points="0 0, 8 3, 0 6" fill="#00a7b5"/>
+              </marker>
+              <marker id="sum-ah-amber" markerWidth="9" markerHeight="9"
+                      refX="7" refY="3" orient="auto">
+                <polygon points="0 0, 8 3, 0 6" fill="#d88919"/>
+              </marker>
+              <marker id="sum-ah-loop" markerWidth="9" markerHeight="9"
+                      refX="7" refY="3" orient="auto">
+                <polygon points="0 0, 8 3, 0 6" fill="#087783"/>
+              </marker>
+            </defs>
+
+            <text x="24" y="32" class="sum-title">AI Native 协作 · 一图总结</text>
+
+            <!-- 主线四节点 -->
+            <!-- A 人+agent -->
+            <rect x="24" y="120" width="180" height="96" rx="10" class="sum-box" data-seq="sum" data-seq-i="0"/>
+            <text x="114" y="162" text-anchor="middle" class="sum-name">人 + agent</text>
+            <text x="114" y="186" text-anchor="middle" class="sum-sub">判断 × 吞吐</text>
+
+            <!-- B 文档协议 -->
+            <rect x="260" y="120" width="180" height="96" rx="10" class="sum-box" data-seq="sum" data-seq-i="1"/>
+            <text x="350" y="158" text-anchor="middle" class="sum-name">文档协议</text>
+            <text x="350" y="182" text-anchor="middle" class="sum-sub">spec / plan</text>
+            <text x="350" y="200" text-anchor="middle" class="sum-sub">delivery / TODO</text>
+
+            <!-- C git 中枢 -->
+            <rect x="496" y="112" width="200" height="112" rx="12" class="sum-box-hub" data-seq="sum" data-seq-i="2"/>
+            <text x="596" y="146" text-anchor="middle" class="sum-tag">中枢</text>
+            <text x="596" y="174" text-anchor="middle" class="sum-name-light">git 事实源</text>
+            <text x="596" y="196" text-anchor="middle" class="sum-sub-light">可回溯 · 可审计</text>
+
+            <!-- D 群机器人 -->
+            <rect x="752" y="120" width="184" height="96" rx="10" class="sum-box-bot" data-seq="sum" data-seq-i="3"/>
+            <text x="844" y="158" text-anchor="middle" class="sum-name">钉钉群机器人</text>
+            <text x="844" y="182" text-anchor="middle" class="sum-sub">实时广播</text>
+            <text x="844" y="200" text-anchor="middle" class="sum-sub">流转下一棒</text>
+
+            <!-- 主线箭头 -->
+            <line x1="204" y1="168" x2="252" y2="168" class="sum-arrow" marker-end="url(#sum-ah)"/>
+            <line x1="440" y1="168" x2="488" y2="168" class="sum-arrow" marker-end="url(#sum-ah)"/>
+            <line x1="696" y1="168" x2="744" y2="168" class="sum-arrow" marker-end="url(#sum-ah)"/>
+
+            <!-- E 钉钉 doc MCP，向上汇入 git -->
+            <rect x="496" y="300" width="200" height="62" rx="10" class="sum-box-doc"/>
+            <text x="596" y="326" text-anchor="middle" class="sum-name">钉钉 doc · MCP</text>
+            <text x="596" y="346" text-anchor="middle" class="sum-sub">私有配置 + 文档协议</text>
+            <line x1="596" y1="300" x2="596" y2="228" class="sum-arrow-v" marker-end="url(#sum-ah-amber)"/>
+
+            <!-- 接力闭环 -->
+            <path d="M 844 224 V 392 Q 844 420 814 420 H 144 Q 114 420 114 392 V 224"
+                  class="sum-loop" marker-end="url(#sum-ah-loop)"/>
+            <rect x="316" y="408" width="328" height="24" rx="6" fill="#ffffff"/>
+            <text x="480" y="425" text-anchor="middle" class="sum-loop-text">
+              agent 接力闭环 · 判断与决策高速传给下一棒
+            </text>
+
+            <!-- 底部评估 -->
+            <text x="480" y="458" text-anchor="middle" class="sum-foot-strong">
+              北极星：质量与风险不变差的前提下，单位时间内有效业务交付量 ↑
+            </text>
+            <text x="480" y="478" text-anchor="middle" class="sum-foot">
+              五维评估 · 业务产出 · 组织流速 · 质量稳定 · 组织杠杆 · 治理安全
+            </text>
+
+            <!-- 隐形导引路径 + 流动数据包 -->
+            <path id="g-sum-ab"   class="aguide" d="M 204 168 L 252 168"/>
+            <path id="g-sum-bc"   class="aguide" d="M 440 168 L 488 168"/>
+            <path id="g-sum-cd"   class="aguide" d="M 696 168 L 744 168"/>
+            <path id="g-sum-doc"  class="aguide" d="M 596 300 L 596 228"/>
+            <path id="g-sum-loop" class="aguide"
+                  d="M 844 224 V 392 Q 844 420 814 420 H 144 Q 114 420 114 392 V 224"/>
+
+            <circle class="pkt pkt-cyan"  r="5" data-path="g-sum-ab"  data-dur="1400" data-delay="0"/>
+            <circle class="pkt pkt-cyan"  r="5" data-path="g-sum-bc"  data-dur="1400" data-delay="220"/>
+            <circle class="pkt pkt-cyan"  r="5" data-path="g-sum-cd"  data-dur="1400" data-delay="440"/>
+            <circle class="pkt pkt-amber" r="5" data-path="g-sum-doc" data-dur="1800" data-delay="0"/>
+            <circle class="pkt baton baton-loop" r="6.5" data-path="g-sum-loop"
+                    data-dur="5200" data-delay="0"/>
+          </svg>
           <figcaption>
             人保留判断权和责任，agent 承担吞吐量；文档成为协议，版本化事实源成为中枢，
             钉钉群机器人完成实时广播，最后用业务产出与组织流速闭环评估。
@@ -964,5 +1002,129 @@
         </figure>
       </section>
     </main>
+
+    <script>
+      // 导航当前段落高亮（滚动到哪一段，nav 对应项亮起）
+      (function () {
+        var links = Array.prototype.slice.call(
+          document.querySelectorAll('nav a[href^="#"]')
+        );
+        var map = {};
+        links.forEach(function (a) {
+          var id = a.getAttribute("href").slice(1);
+          if (id) map[id] = a;
+        });
+        var targets = Object.keys(map)
+          .map(function (id) { return document.getElementById(id); })
+          .filter(Boolean);
+        if (!("IntersectionObserver" in window) || !targets.length) return;
+
+        var current = null;
+        var io = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) {
+                if (current) current.classList.remove("is-active");
+                current = map[e.target.id];
+                if (current) current.classList.add("is-active");
+              }
+            });
+          },
+          { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
+        );
+        targets.forEach(function (t) { io.observe(t); });
+      })();
+
+      // 滚动入场动效（尊重 reduced-motion：不开启即内容默认全显）
+      (function () {
+        var reduce =
+          window.matchMedia &&
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (reduce || !("IntersectionObserver" in window)) return;
+
+        document.documentElement.classList.add("reveal-on");
+
+        var items = Array.prototype.slice.call(
+          document.querySelectorAll("[data-reveal], [data-stagger]")
+        );
+
+        // hero 首屏：载入即浮现，不等滚动
+        var hero = document.querySelector(".hero-content[data-stagger]");
+        if (hero) {
+          requestAnimationFrame(function () {
+            requestAnimationFrame(function () { hero.classList.add("in"); });
+          });
+        }
+
+        var io = new IntersectionObserver(
+          function (entries, obs) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) {
+                e.target.classList.add("in");
+                obs.unobserve(e.target);
+              }
+            });
+          },
+          { rootMargin: "0px 0px -12% 0px", threshold: 0.1 }
+        );
+
+        items.forEach(function (el) {
+          if (el === hero) return;
+          io.observe(el);
+        });
+      })();
+
+      // 流程图流动动画：数据包沿隐形路径流动 + 节点按顺序点亮
+      (function () {
+        var reduce =
+          window.matchMedia &&
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (reduce) return;
+
+        // 1) 数据包 / 接力棒沿隐形导引路径循环流动
+        var pkts = Array.prototype.slice.call(document.querySelectorAll(".pkt"));
+        pkts.forEach(function (pk) {
+          var path = document.getElementById(pk.getAttribute("data-path"));
+          if (!path || !path.getTotalLength) return;
+          var len = path.getTotalLength();
+          var dur = parseFloat(pk.getAttribute("data-dur")) || 2000;
+          var delay = parseFloat(pk.getAttribute("data-delay")) || 0;
+          var isBaton = pk.classList.contains("baton");
+          function frame(now) {
+            var t = ((((now - delay) % dur) + dur) % dur) / dur;
+            var p = path.getPointAtLength(t * len);
+            pk.setAttribute("cx", p.x.toFixed(1));
+            pk.setAttribute("cy", p.y.toFixed(1));
+            // 普通数据包在两端淡入淡出；接力棒始终可见
+            var fade = isBaton ? 1 : Math.sin(t * Math.PI);
+            pk.setAttribute("opacity", (0.25 + 0.75 * fade).toFixed(2));
+            requestAnimationFrame(frame);
+          }
+          requestAnimationFrame(frame);
+        });
+
+        // 2) 节点按 data-seq 顺序点亮（表达"接力"逐环推进）
+        var groups = {};
+        Array.prototype.slice
+          .call(document.querySelectorAll("[data-seq]"))
+          .forEach(function (el) {
+            var g = el.getAttribute("data-seq");
+            (groups[g] = groups[g] || []).push(el);
+          });
+        Object.keys(groups).forEach(function (g) {
+          var arr = groups[g].sort(function (a, b) {
+            return (
+              +a.getAttribute("data-seq-i") - +b.getAttribute("data-seq-i")
+            );
+          });
+          var idx = 0;
+          setInterval(function () {
+            arr.forEach(function (el) { el.classList.remove("lit"); });
+            arr[idx].classList.add("lit");
+            idx = (idx + 1) % arr.length;
+          }, 900);
+        });
+      })();
+    </script>
   </body>
 </html>
