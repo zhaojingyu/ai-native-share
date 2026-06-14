@@ -1109,7 +1109,7 @@
             pk.setAttribute("cy", p.y.toFixed(1));
             // 普通数据包在两端淡入淡出；接力棒始终可见
             var fade = isBaton ? 1 : Math.sin(t * Math.PI);
-            pk.setAttribute("opacity", (0.25 + 0.75 * fade).toFixed(2));
+            pk.style.opacity = (0.25 + 0.75 * fade).toFixed(2);
             requestAnimationFrame(frame);
           }
           requestAnimationFrame(frame);

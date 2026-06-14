@@ -1536,6 +1536,10 @@ nav a.is-active::after {
   .summary-svg { overflow: visible; }
 }
 
+@media (max-width: 480px) {
+  .evidence-strip { grid-template-columns: 1fr; }
+}
+
 /* ============== Responsive ============== */
 @media (max-width: 980px) {
   .thesis-grid,
@@ -1659,7 +1663,7 @@ nav a.is-active::after {
 .aguide { fill: none; stroke: none; }
 .hub-conn { stroke: var(--line); stroke-width: 2; }
 
-.pkt { opacity: 1; }
+.pkt { opacity: 0; }
 .pkt-cyan  { fill: var(--cyan);  filter: drop-shadow(0 0 3px rgba(0, 167, 181, 0.7)); }
 .pkt-amber { fill: var(--amber); filter: drop-shadow(0 0 3px rgba(216, 137, 25, 0.7)); }
 .pkt-green { fill: var(--green); filter: drop-shadow(0 0 3px rgba(79, 143, 101, 0.7)); }
