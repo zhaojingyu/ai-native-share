@@ -120,7 +120,7 @@ nav a:hover { color: #fff; }
 .hero-content {
   position: relative;
   z-index: 1;
-  width: min(760px, 100%);
+  width: min(900px, 100%);
 }
 
 .eyebrow,
@@ -140,8 +140,10 @@ h1 {
   font-size: clamp(42px, 6.2vw, 78px);
   line-height: 1.04;
   letter-spacing: 0;
-  max-width: 840px;
+  max-width: 900px;
 }
+
+.mobile-break { display: none; }
 
 .hero-copy {
   max-width: 700px;
@@ -1605,6 +1607,8 @@ nav a.is-active::after {
 
   .hero-copy { font-size: 17px; }
 
+  .mobile-break { display: inline; }
+
   .section {
     padding-top: 64px;
     padding-bottom: 64px;
@@ -1662,17 +1666,6 @@ nav a.is-active::after {
 
 .aguide { fill: none; stroke: none; }
 .hub-conn { stroke: var(--line); stroke-width: 2; }
-
-.pkt { opacity: 0; }
-.pkt-cyan  { fill: var(--cyan);  filter: drop-shadow(0 0 3px rgba(0, 167, 181, 0.7)); }
-.pkt-amber { fill: var(--amber); filter: drop-shadow(0 0 3px rgba(216, 137, 25, 0.7)); }
-.pkt-green { fill: var(--green); filter: drop-shadow(0 0 3px rgba(79, 143, 101, 0.7)); }
-.baton {
-  fill: #fff;
-  stroke: var(--cyan-dark);
-  stroke-width: 3;
-  filter: drop-shadow(0 0 5px rgba(0, 167, 181, 0.65));
-}
 
 /* 节点按顺序点亮（接力感） */
 .stepg .step-box,

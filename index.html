@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AI Native 组织协作探索：从单点提效到组织流速</title>
+    <title>AI Native 组织实践探索分享：从单点提效到组织流速</title>
     <meta
       name="description"
       content="一次关于 AI Native 组织协作的探索：如何从单点提效走向组织流速提升。"
     />
     <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./assets/favicon.svg" />
-    <meta property="og:title" content="一次 AI Native 组织的探索" />
+    <meta property="og:title" content="一次 AI Native 组织的实践探索分享" />
     <meta property="og:description" content="从单点提效到组织流速：git · 钉钉 doc MCP · 钉钉群机器人 三件套组成的高速信息通路。" />
     <meta property="og:image" content="https://ai-native-share.vercel.app/assets/hero-ai-native-v3.png" />
     <meta property="og:url" content="https://ai-native-share.vercel.app/" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="一次 AI Native 组织的探索" />
+    <meta name="twitter:title" content="一次 AI Native 组织的实践探索分享" />
     <meta name="twitter:description" content="从单点提效到组织流速。" />
     <meta name="twitter:image" content="https://ai-native-share.vercel.app/assets/hero-ai-native-v3.png" />
     <link rel="stylesheet" href="./styles.css" />
@@ -46,9 +46,9 @@
         <img src="./assets/hero-ai-native-v3.png" alt="" class="hero-image" />
         <div class="hero-shade"></div>
         <div class="hero-content" data-stagger>
-          <h1>一次 AI Native<br />组织的探索。</h1>
+          <h1>一次 AI Native<br />组织的实践探索<span class="mobile-break"><br /></span>分享。</h1>
           <p class="hero-copy">
-            大家都在用 AI，但团队真的变快了吗？个人提速了，
+            大家都在用 AI，但团队产出变快了多少？个人提速了，
             组织的协作方式却常常没跟上。行业还没有统一答案——
             这里是我们一步步摸索出来的做法，分享给你，也欢迎一起拍砖。
           </p>
@@ -95,13 +95,13 @@
                 瓶颈在交接处
               </text>
               <text x="220" y="192" text-anchor="middle" class="fig-detail">
-                会议、聊天、记忆依赖
+                有终版文档和会议纪要
               </text>
               <text x="220" y="210" text-anchor="middle" class="fig-detail">
-                个人记忆无版本 · 不可回溯
+                中间决断缺版本
               </text>
               <text x="220" y="228" text-anchor="middle" class="fig-detail">
-                决策过程流失
+                迭代脉络难回溯
               </text>
               <rect x="40" y="250" width="380" height="46" rx="8"
                     class="fig-output-bad"/>
@@ -148,9 +148,9 @@
             </g>
           </svg>
           <figcaption>
-            只让每个人用上 AI，但仍然靠口头派活、会议同步、聊天翻记录——
+            只让每个人用上 AI，但交接仍然依赖会议同步、群聊补充和零散记录——
             瓶颈会从「个人产出」转移到「协作交接」。更隐蔽的是：
-            <strong>每个人对项目的记忆没有历史版本，思考过程和核心决策无法回溯</strong>。
+            <strong>不是没有在线文档和会议纪要，而是中间的决断过程、方案迭代和取舍版本经常没有被结构化留存</strong>。
           </figcaption>
         </figure>
 
@@ -327,12 +327,6 @@
             <text x="777" y="152" text-anchor="middle" class="hub-name">钉钉群机器人</text>
             <text x="777" y="174" text-anchor="middle" class="hub-role">实时广播 · 流转下一棒</text>
 
-            <!-- 流动数据包 -->
-            <circle class="pkt pkt-amber" r="5.5" data-path="g-doc"     data-dur="2200" data-delay="0"/>
-            <circle class="pkt pkt-cyan"  r="5.5" data-path="g-git-in"  data-dur="2400" data-delay="0"/>
-            <circle class="pkt pkt-cyan"  r="5.5" data-path="g-git-out" data-dur="2400" data-delay="1200"/>
-            <circle class="pkt pkt-green" r="5.5" data-path="g-bot"     data-dur="1500" data-delay="0"/>
-            <circle class="pkt pkt-green" r="5.5" data-path="g-bot"     data-dur="1500" data-delay="750"/>
           </svg>
           <figcaption>
             <strong>git · 钉钉 doc MCP · 钉钉群机器人</strong>
@@ -470,11 +464,6 @@
               每一步都有 commit · 测试 · delivery 留痕
             </text>
 
-            <!-- 接力棒环形轨道（隐形）：从卡片上方掠过 5 步，再经底部回环到第 1 步 -->
-            <path id="g-relay" class="aguide"
-                  d="M 100 26 H 840 C 905 26 905 175 470 175 C 35 175 35 26 100 26"/>
-            <circle class="pkt baton" r="7" data-path="g-relay"
-                    data-dur="7200" data-delay="0" data-relay="workflow"/>
           </svg>
           <figcaption>
             传统模式交接靠「人在线 + 记忆」；AI Native 模式交接靠「文档 + git」。
@@ -523,7 +512,7 @@
       <!-- ============== 5. 实际案例 ============== -->
       <section id="cases" class="section cases">
         <div class="section-kicker" data-reveal>实际案例 · 真实跑通的三个画面</div>
-        <h2 data-reveal>不是抽象方法论，是真实在 gamehaus-ai-proxy 项目里跑通的画面。</h2>
+        <h2 data-reveal>不是抽象方法论，是真实在项目协作里跑通的画面。</h2>
 
         <div class="case-grid" data-stagger>
           <!-- 案例 1：钉钉群机器人推送（突出 at + TODO 流转） -->
@@ -539,10 +528,10 @@
                 <span class="mock-dt-time">19:02</span>
               </div>
               <div class="mock-dt-title">
-                <strong>@jyzhao</strong> 提交了 admin quota Phase A/B 需求
+                <strong>@jyzhao</strong> 提交了 admin quota Phase A/B 需求与架构方案
               </div>
               <div class="mock-dt-meta">
-                <span>仓库 · ai-proxy</span>
+                <span>仓库 · 协作项目</span>
                 <span>分支 · master</span>
                 <span>3 commits</span>
               </div>
@@ -550,17 +539,17 @@
                 <div class="mock-mention">
                   <span class="mock-at">@sy.hang</span>
                   <span class="mock-arrow">→</span>
-                  <span>产品验收 portal 登录流程</span>
+                  <span>技术实现 quota 后台与接口联调</span>
                 </div>
                 <div class="mock-mention">
                   <span class="mock-at">@july.zhou</span>
                   <span class="mock-arrow">→</span>
-                  <span>技术调研 new-api 方案</span>
+                  <span>产品验收 portal 登录流程</span>
                 </div>
                 <div class="mock-mention mock-blocked">
                   <span class="mock-at">@sy.hang</span>
                   <span class="mock-arrow">⚠</span>
-                  <span>阻塞：portal 用户登录失败</span>
+                  <span>阻塞：portal 用户登录依赖联调修复</span>
                 </div>
               </div>
               <div class="mock-dt-footer">
@@ -569,8 +558,10 @@
             </div>
 
             <p class="case-explain">
-              提交者写明自己交付了什么，<strong>at 到具体的人 + 具体的下一步 TODO</strong>。
-              群机器人把交付和待办一并广播，下一个协作人不用问「我该做什么」。
+              <strong>@jyzhao</strong> 负责需求和技术架构，
+              <strong>@sy.hang</strong> 接技术实现，
+              <strong>@july.zhou</strong> 接产品验收。
+              群机器人把交付、阻塞和下一步责任人一并广播，协作人不用再问「我该做什么」。
             </p>
           </article>
 
@@ -584,7 +575,7 @@
             <div class="case-mock case-mock-git">
               <div class="mock-git-line">
                 <span class="mock-git-hash">b79d5e</span>
-                <span class="mock-git-author">master · ai-proxy</span>
+                <span class="mock-git-author">master · collaboration</span>
               </div>
               <div class="mock-git-msg">
                 <code>feat(admin_quota):</code> Phase A/B 部分提测
@@ -592,34 +583,35 @@
               <div class="mock-git-timeline">
                 <div class="git-tl-row">
                   <span class="git-tl-time">06-12 14:30</span>
-                  <span class="git-tl-who">@sy.hang</span>
-                  <span class="git-tl-act">写 spec · admin quota 边界</span>
+                  <span class="git-tl-who">@jyzhao</span>
+                  <span class="git-tl-act">需求澄清 · 架构边界</span>
                 </div>
                 <div class="git-tl-row">
                   <span class="git-tl-time">06-12 16:45</span>
-                  <span class="git-tl-who">@jyzhao</span>
-                  <span class="git-tl-act">DB 变更 · corp / team_quota</span>
+                  <span class="git-tl-who">@sy.hang</span>
+                  <span class="git-tl-act">技术实现 · quota 数据模型</span>
                 </div>
                 <div class="git-tl-row">
                   <span class="git-tl-time">06-12 18:20</span>
-                  <span class="git-tl-who">@jyzhao</span>
-                  <span class="git-tl-act">UI 调整 · admin 后台</span>
+                  <span class="git-tl-who">@sy.hang</span>
+                  <span class="git-tl-act">接口联调 · portal 登录</span>
                 </div>
                 <div class="git-tl-row">
                   <span class="git-tl-time">06-12 19:02</span>
-                  <span class="git-tl-who">@jyzhao</span>
-                  <span class="git-tl-act">Shell · weekly_cap，提测</span>
+                  <span class="git-tl-who">@july.zhou</span>
+                  <span class="git-tl-act">产品验收 · 流程反馈</span>
                 </div>
               </div>
               <div class="mock-git-footer">
-                <span class="mock-git-tag">#sy.hang_admin</span>
-                <span class="mock-git-tag">#7000</span>
+                <span class="mock-git-tag">#arch_jyzhao</span>
+                <span class="mock-git-tag">#impl_syhang</span>
+                <span class="mock-git-tag">#product_july</span>
               </div>
             </div>
 
             <p class="case-explain">
-              <strong>谁在哪个时间点做了什么事情</strong>，全部以原始版本的形式留在 git 里。
-              任何人、任何 agent 接手时，都能拿到完整的时间线和决策链。
+              git 不只记录代码，也记录需求、架构、实现和验收的接力链路。
+              任何人、任何 agent 接手时，都能看到<strong>谁在什么时间做了什么，以及下一棒应该找谁</strong>。
             </p>
           </article>
 
@@ -635,7 +627,7 @@
                 <span class="mock-dot mock-dot-r"></span>
                 <span class="mock-dot mock-dot-y"></span>
                 <span class="mock-dot mock-dot-g"></span>
-                <span class="mock-term-title">Agent · 我的工作台</span>
+                <span class="mock-term-title">Agent · 产品验收工作台</span>
               </div>
               <div class="mock-term-body">
                 <div class="mock-line mock-line-user">
@@ -651,7 +643,11 @@
                 <div class="mock-qa">
                   <div class="qa-row">
                     <span class="qa-q">by</span>
-                    <span class="qa-a">@jyzhao · admin quota Phase A/B</span>
+                    <span class="qa-a">@jyzhao · 需求和架构方案已提交</span>
+                  </div>
+                  <div class="qa-row">
+                    <span class="qa-q">by</span>
+                    <span class="qa-a">@sy.hang · 技术实现已提测</span>
                   </div>
                 </div>
 
@@ -669,15 +665,15 @@
                   </div>
                   <div class="qa-row">
                     <span class="qa-q">↪</span>
-                    <span class="qa-a">完成后流转给 @july.zhou</span>
+                    <span class="qa-a">通过后流转给 @jyzhao 做架构闭环</span>
                   </div>
                 </div>
               </div>
             </div>
 
             <p class="case-explain">
-              人只需要问一句「<strong>有什么需要我做的</strong>」，
-              agent 就把<strong>上次别人做了什么、我的 TODO、验收标准、下一棒是谁</strong>
+              产品同学只需要问一句「<strong>有什么需要我做的</strong>」，
+              agent 就把<strong>架构输入、技术实现状态、我的验收 TODO、通过后的流转对象</strong>
               一次性列出来。协作不再依赖记忆和口头确认。
             </p>
           </article>
@@ -706,13 +702,13 @@
       <!-- ============== 6. 评估 ============== -->
       <section id="evaluation" class="section evaluation">
         <div class="section-kicker" data-reveal>管理者视角</div>
-        <h2 data-reveal>评估改造效果，不能看「用了多少 AI」，要看组织产出有没有变好。</h2>
+        <h2 data-reveal>评估改造效果，不能看「用了多少 AI」，要看业务结果、质量和组织流速有没有一起变好。</h2>
 
         <div class="northstar-card" data-reveal>
           <div class="northstar-label">北极星指标</div>
           <p class="northstar-text">
-            在质量和风险不变差的前提下，<br />
-            单位时间内完成的<strong>有效业务交付量</strong>提升了多少。
+            单位时间内，<br />
+            <strong>高质量业务结果</strong>的综合提升。
           </p>
         </div>
 
@@ -735,9 +731,9 @@
               <div role="cell">Spec→Delivery 周期、交接等待时间、阻塞响应时间</div>
             </div>
             <div class="eval-row" role="row">
-              <div role="cell">质量稳定</div>
-              <div role="cell">快了之后有没有更乱</div>
-              <div role="cell">一次验收通过率、返工率、线上事故率、回滚次数</div>
+              <div role="cell">质量提升</div>
+              <div role="cell">AI 参与后结果是否更准确、更稳定</div>
+              <div role="cell">一次验收通过率、缺陷前置发现率、返工率下降、用户满意度</div>
             </div>
             <div class="eval-row" role="row">
               <div role="cell">组织杠杆</div>
@@ -779,7 +775,7 @@
 
                 <text x="0"    y="-135" text-anchor="middle" class="radar-label">业务产出</text>
                 <text x="130"  y="-40"  text-anchor="middle" class="radar-label">组织流速</text>
-                <text x="80"   y="115"  text-anchor="middle" class="radar-label">质量稳定</text>
+                <text x="80"   y="115"  text-anchor="middle" class="radar-label">质量提升</text>
                 <text x="-80"  y="115"  text-anchor="middle" class="radar-label">组织杠杆</text>
                 <text x="-130" y="-40"  text-anchor="middle" class="radar-label">治理安全</text>
               </g>
@@ -794,7 +790,8 @@
 
         <p class="evaluation-note">
           一句话提醒：AI 调用次数、token 消耗量、生成代码行数，都只是「用了 AI」的证据，
-          不是「组织变强」的证据。别把过程指标当成结果指标。
+          不是「组织变强」的证据。真正要看的是更多、更快、更好、更可控：
+          业务结果、质量提升、组织流速和治理风险必须一起评估。
         </p>
       </section>
 
@@ -986,30 +983,16 @@
 
             <!-- 底部评估 -->
             <text x="480" y="458" text-anchor="middle" class="sum-foot-strong">
-              北极星：质量与风险不变差的前提下，单位时间内有效业务交付量 ↑
+              北极星：单位时间内高质量业务结果的综合提升
             </text>
             <text x="480" y="478" text-anchor="middle" class="sum-foot">
-              五维评估 · 业务产出 · 组织流速 · 质量稳定 · 组织杠杆 · 治理安全
+              五维评估 · 业务产出 · 组织流速 · 质量提升 · 组织杠杆 · 治理安全
             </text>
 
-            <!-- 隐形导引路径 + 流动数据包 -->
-            <path id="g-sum-ab"   class="aguide" d="M 204 168 L 252 168"/>
-            <path id="g-sum-bc"   class="aguide" d="M 440 168 L 488 168"/>
-            <path id="g-sum-cd"   class="aguide" d="M 696 168 L 744 168"/>
-            <path id="g-sum-doc"  class="aguide" d="M 596 300 L 596 228"/>
-            <path id="g-sum-loop" class="aguide"
-                  d="M 844 224 V 392 Q 844 420 814 420 H 144 Q 114 420 114 392 V 224"/>
-
-            <circle class="pkt pkt-cyan"  r="5" data-path="g-sum-ab"  data-dur="1400" data-delay="0"/>
-            <circle class="pkt pkt-cyan"  r="5" data-path="g-sum-bc"  data-dur="1400" data-delay="220"/>
-            <circle class="pkt pkt-cyan"  r="5" data-path="g-sum-cd"  data-dur="1400" data-delay="440"/>
-            <circle class="pkt pkt-amber" r="5" data-path="g-sum-doc" data-dur="1800" data-delay="0"/>
-            <circle class="pkt baton baton-loop" r="6.5" data-path="g-sum-loop"
-                    data-dur="5200" data-delay="0"/>
           </svg>
           <figcaption>
             人保留判断权和责任，agent 承担吞吐量；文档成为协议，版本化事实源成为中枢，
-            钉钉群机器人完成实时广播，最后用业务产出与组织流速闭环评估。
+            钉钉群机器人完成实时广播，最后用业务产出、质量提升与组织流速闭环评估。
           </figcaption>
         </figure>
       </section>
@@ -1086,36 +1069,14 @@
         });
       })();
 
-      // 流程图流动动画：数据包沿隐形路径流动 + 节点按顺序点亮
+      // 流程图轻量动画：节点按顺序点亮，避免移动小点干扰阅读
       (function () {
         var reduce =
           window.matchMedia &&
           window.matchMedia("(prefers-reduced-motion: reduce)").matches;
         if (reduce) return;
 
-        // 1) 数据包 / 接力棒沿隐形导引路径循环流动
-        var pkts = Array.prototype.slice.call(document.querySelectorAll(".pkt"));
-        pkts.forEach(function (pk) {
-          var path = document.getElementById(pk.getAttribute("data-path"));
-          if (!path || !path.getTotalLength) return;
-          var len = path.getTotalLength();
-          var dur = parseFloat(pk.getAttribute("data-dur")) || 2000;
-          var delay = parseFloat(pk.getAttribute("data-delay")) || 0;
-          var isBaton = pk.classList.contains("baton");
-          function frame(now) {
-            var t = ((((now - delay) % dur) + dur) % dur) / dur;
-            var p = path.getPointAtLength(t * len);
-            pk.setAttribute("cx", p.x.toFixed(1));
-            pk.setAttribute("cy", p.y.toFixed(1));
-            // 普通数据包在两端淡入淡出；接力棒始终可见
-            var fade = isBaton ? 1 : Math.sin(t * Math.PI);
-            pk.style.opacity = (0.25 + 0.75 * fade).toFixed(2);
-            requestAnimationFrame(frame);
-          }
-          requestAnimationFrame(frame);
-        });
-
-        // 2) 节点按 data-seq 顺序点亮（表达"接力"逐环推进）
+        // 节点按 data-seq 顺序点亮（表达"接力"逐环推进）
         var groups = {};
         Array.prototype.slice
           .call(document.querySelectorAll("[data-seq]"))
